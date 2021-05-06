@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} home{% endblock %}
+
+
+{% block body %}
+<div class="example-wrapper">
+    <h1> Restaurant Menu </h1>
+
+    <div class="container pt-4">
+        <h2><Header fw-d> STARTERS </Header></h2>
+        <div class="row pt-4">
+            {% for i in images %}
+            <div class="col-sm-12 col-md-6 col-lg-3 pb-4">
+                <div class="card ">
+                    <img src="{{ i }}" class="img img-responsive card-img" />
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Fajita</h5>
+                        <p class="card-text">a marinated strip usually of beef or chicken grilled or broiled and served  </p><p>€11,40</p>
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %}
+
+        </div>
+</div>
+{% endblock %}

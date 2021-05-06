@@ -1,0 +1,8 @@
+index:
+   path: /
+   controller: App\Controller\TestController::index
+   
+random:
+   path: /random
+   controller: App\Controller\RandomController::random
+
